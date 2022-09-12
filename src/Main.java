@@ -1,22 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        //задание 7
-        int age = 99;
-        boolean goToGarden = age >= 2 && age <=6;
-        if (goToGarden) {
-            System.out.println("Если возраст равен " + age + " , то нужно ходить в детский сад");
+        //задание 8
+        int age = 15;
+        boolean no = age < 5;
+        if (no) {
+            System.out.println("Если ребенку " + age + " , то запрещено кататься на аттракционах.");
         }
-        boolean goToSchool = age >=7 && age <= 18;
-        if (goToSchool) {
-            System.out.println("Если возраст равен " + age + " , то нужно ходить в школу");
+        boolean yes = age >=5 && age < 14;
+        if (yes) {
+            System.out.println("Если ребенку " + age + " , то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
         }
-        boolean goToUniverse = age >18 && age < 24;
-        if (goToUniverse) {
-            System.out.println("Если возраст равен " + age + " , то нужно ходить в университет");
+        boolean yesSolo = age >=14;
+        if (yesSolo) {
+            System.out.println("Если ребенку " + age + " , то он может кататься без сопровождения взрослого.");
         }
-        boolean goToWork = age >=24;
-        if (goToWork) {
-            System.out.println("Если возраст равен " + age + " , то нужно ходить на работу");
-        }
+
     }
 }
