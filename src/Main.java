@@ -1,12 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        //задание 1
-        int age = 16;
-        if ( age >= 18) {
-            System.out.println("Поздравляем с совершеннолетием!");
+        //задание 8
+        int age = 15;
+        boolean no = age < 5;
+        if (no) {
+            System.out.println("Если ребенку " + age + " , то запрещено кататься на аттракционах.");
         }
-        if (age < 18) {
-            System.out.println("Возраст совершеннолетия еще не наступил, необходимо подождать.");
+        boolean yes = age >=5 && age < 14;
+        if (yes) {
+            System.out.println("Если ребенку " + age + " , то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
         }
+        boolean yesSolo = age >=14;
+        if (yesSolo) {
+            System.out.println("Если ребенку " + age + " , то он может кататься без сопровождения взрослого.");
+        }
+
     }
 }
