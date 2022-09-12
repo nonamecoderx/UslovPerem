@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        //задание 2
-        int age1 = 8;
-        if (age1 >= 7) {
-            System.out.println("Ребенок ходит в школу");
+        //задание 3
+        int all = 102;
+        int sit = 60;
+        int mesto = 33; //текущее место
+        if (mesto <= sit){
+            System.out.println("Ваше место сидячее");
         }
-        int age2 = 19;
-        if (age2 >= 18) {
-            System.out.println("Человек уже закончил школу и может отправляться в университет");
+        else if (mesto <= all){
+            System.out.println("Ваше место стоячее");
         }
-        int age3 = 27;
-        if (age3 >= 24) {
-            System.out.println("Человек окончил университет и ему пора искать первую работу");
+        else if (mesto > all){
+            System.out.println("Мест нет, вагон полный");
         }
     }
 }
