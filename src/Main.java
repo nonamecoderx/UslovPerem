@@ -1,19 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        //задание 8
-        int age = 15;
-        boolean no = age < 5;
-        if (no) {
-            System.out.println("Если ребенку " + age + " , то запрещено кататься на аттракционах.");
+        //задание 9
+        int one = 5;
+        int two = 7;
+        int three = 3;
+        boolean maxOne = one > two && one > three;
+        boolean maxTwo = two > one && two > three;
+        boolean maxThree = three > one && three > two;
+        if (maxOne) {
+            System.out.println(one);
+        } else {
+            if (maxTwo) {
+                System.out.println(two);
+            } else {
+                if (maxThree) {
+                    System.out.println(three);
+                }
+            }
         }
-        boolean yes = age >=5 && age < 14;
-        if (yes) {
-            System.out.println("Если ребенку " + age + " , то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
-        }
-        boolean yesSolo = age >=14;
-        if (yesSolo) {
-            System.out.println("Если ребенку " + age + " , то он может кататься без сопровождения взрослого.");
-        }
-
     }
 }
